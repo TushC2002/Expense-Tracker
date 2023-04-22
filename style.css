@@ -1,0 +1,13 @@
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.delete-item {
+    color: #dc3545;
+}
+
+.delete-item:hover {
+    color: #c82333;
+    text-decoration: none;
+}

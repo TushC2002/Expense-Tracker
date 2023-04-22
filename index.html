@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Expense Tracker</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Add Expense
+                    </div>
+                    <div class="card-body">
+                        <form id="expense-form">
+                            <div class="form-group">
+                                <label for="expense-name">Expense Name</label>
+                                <input type="text" id="expense-name" class="form-control" placeholder="Enter expense name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="expense-amount">Amount</label>
+                                <input type="number" id="expense-amount" class="form-control" placeholder="Enter amount" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Expense</button>
+                            <button type="button" class="btn btn-danger clear-expenses">Clear All</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Expenses
+                    </div>
+                    <div class="card-body">
+                        <ul id="expense-list" class="list-group">
+                            
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <h5>Total Expense: $<span id="total-expense">0.00</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
